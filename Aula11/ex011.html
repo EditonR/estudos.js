@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>País</title>
+</head>
+<body>
+  <h1>Descobrindo sua nacionalidade!</h1>
+  Digite o país que você nasceu
+  <input type="text" id="txtpais" name="txtpais">
+  <input type="button" value="Verificar" onclick="verificar()">
+  <div id="nacionalidade"></div>
+
+  <script>
+    function verificar() {
+      const inputPais = document.getElementById('txtpais'); //seleciona o input
+      const res = document.getElementById('nacionalidade'); // seleciona a div de resultado
+      const pais = inputPais.value.trim(); // obtém o valor e remove os espaços
+      res.innerHTML = `Vivendo em <strong>${pais}</strong>.`; // primeira mensagem com o país
+
+      if (pais.toLowerCase() !== 'brasil') {
+        res.innerHTML += ` Você é <strong>Estrangeiro!</strong>`;
+      } else {
+        res.innerHTML += ` Você é <strong>Brasileiro!</strong>`;
+      }
+    }
+  </script>
+</body>
+</html>
