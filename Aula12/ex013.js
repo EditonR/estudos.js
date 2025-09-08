@@ -11,7 +11,8 @@ var diaSem = agora.getDay ()
 */ 
 
 //console.log(diaSem)
-
+// Só funciona com caracteres ou string
+// Condição Multípla: Utiliza uma expressão.
 switch(diaSem) {
   case 0:
     console.log('Domingo!')
