@@ -1,10 +1,18 @@
 var c = 1
+do {
+  console.log(`Passo ${c}`)
+  c++ 
+} while (c <= 100)
+
+/*
+var c = 1
 while (c <= 6 ){
-  console.log('Tudo bem?')
-  c++ // É um incremento igual na aula que utilizamos c = c + 1
+  console.log(`Passo ${c}`)
+  c++ 
 }
+  Estrutura de repetição onde ele testa antes e depois executa o bloco.
 
-
+*/
 
 
 
